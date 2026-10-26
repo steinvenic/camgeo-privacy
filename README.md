@@ -1,0 +1,1 @@
+# camgeo-privacy
