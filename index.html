@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CamGeo 隐私权政策 / Privacy Policy：位置同步、后台定位、蓝牙、诊断日志和数据删除。">
+  <meta name="referrer" content="no-referrer">
+  <title>CamGeo 隐私权政策 / Privacy Policy</title>
+  <style>
+    :root { color-scheme: light; --ink: #18243b; --muted: #526078; --blue: #245bc1; --line: #dce4ef; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: #f3f6fb; color: var(--ink); font: 16px/1.85 system-ui, -apple-system, "Segoe UI", sans-serif; overflow-wrap: anywhere; }
+    main { max-width: 900px; margin: 40px auto; padding: 44px 52px; background: #fff; border: 1px solid var(--line); border-radius: 20px; }
+    header { padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .brand { margin: 0 0 8px; color: var(--blue); font-weight: 750; letter-spacing: .04em; }
+    h1 { margin: 0 0 16px; font-size: clamp(1.65rem, 5vw, 2.3rem); line-height: 1.35; }
+    h2 { margin: 32px 0 12px; font-size: 1.25rem; line-height: 1.5; }
+    p, ul { margin: 12px 0; }
+    ul { padding-left: 24px; }
+    li + li { margin-top: 8px; }
+    a { color: var(--blue); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid #94b7fb; outline-offset: 4px; }
+    .meta, footer { color: var(--muted); font-size: .92rem; }
+    .summary { margin: 24px 0; padding: 18px 22px; background: #edf4ff; border-left: 4px solid var(--blue); border-radius: 0 10px 10px 0; }
+    .summary p { margin: 0; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    .translation { margin-top: 48px; padding-top: 30px; border-top: 1px solid var(--line); }
+    .translation > h2 { margin-top: 0; font-size: 1.7rem; }
+    footer { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+    @media (max-width: 640px) { main { margin: 0; padding: 28px 22px; border: 0; border-radius: 0; } body { background: #fff; } }
+    @media print { body { background: #fff; } main { margin: 0; padding: 0; border: 0; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">CamGeo</p>
+    <h1>隐私权政策 <span lang="en">/ Privacy Policy</span></h1>
+    <p class="meta">生效及更新日期：2026 年 10 月 26 日 · 应用包名：com.mnd.camgeo</p>
+    <nav aria-label="语言 / Language">
+      <a href="#zh" lang="zh-CN">简体中文</a>
+      <a href="#en" lang="en" hreflang="en">English</a>
+      <a href="mailto:steinvenior@gmail.com">联系开发者 / Contact</a>
+    </nav>
+  </header>
+  <article id="zh" lang="zh-CN" aria-label="中文版隐私权政策">
+    <div class="summary"><p><strong>核心说明：</strong>CamGeo 将手机位置或你设置的固定坐标，通过蓝牙发送给你注册的佳能相机。本应用不会自动将位置上传到开发者服务器；相机拍摄的照片可能包含这些位置信息。</p></div>
+
+    <h2>1. 应用与开发者</h2>
+    <p>CamGeo（应用包名 com.mnd.camgeo）由 steinvenior 提供，用于向兼容的佳能相机同步位置信息，并提供蓝牙拍照、连接状态和断连提醒。本政策适用于 CamGeo 正式发布版。</p>
+    <p>隐私问题或删除请求，请联系：<a href="mailto:steinvenior@gmail.com">steinvenior@gmail.com</a>。</p>
+
+    <h2>2. 处理的信息及用途</h2>
+    <ul>
+      <li><strong>位置信息：</strong>授权后通过 Android 定位服务获取经纬度，以及可用的海拔、精度、定位来源和采集时间；你也可以自行输入固定坐标。这些信息用于向相机提供拍摄地点、显示最近同步结果及判断位置是否仍可使用。持续同步启用时，即使应用不在前台或手机锁屏，也可能继续获取和发送位置。</li>
+      <li><strong>相机与蓝牙信息：</strong>处理相机广播、蓝牙设备标识、设备名称、注册标识、连接状态及可获取的电源状态，用于发现所选相机、完成注册、重新连接、发送位置和控制相机拍照。注册时可能向相机提供手机名称或应用生成的注册标识。</li>
+      <li><strong>设置与运行状态：</strong>在手机本地保存相机注册资料、同步设置、固定坐标、最近的位置及同步时间、权限与引导状态、协议选择等信息，不建立供开发者远程查看的行程数据库。</li>
+      <li><strong>诊断与反馈：</strong>在本地记录同步、蓝牙、定位、通知和后台运行的状态、时间及错误信息。你主动反馈时，还可能附带应用版本、手机型号、Android 版本及你输入的说明。运行诊断设计上避免记录精确坐标和完整蓝牙地址，但仍可能包含设备及运行环境信息，请在分享前确认内容。</li>
+    </ul>
+
+    <h2>3. 权限与后台运行</h2>
+    <ul>
+      <li><strong>定位权限：</strong>用于获取手机位置，并满足适用 Android 版本的蓝牙扫描要求。后台定位（“始终允许”）用于应用在后台或锁屏时继续向相机提供位置；仅允许使用期间定位可能影响后台同步。</li>
+      <li><strong>附近设备 / 蓝牙权限：</strong>用于扫描、注册、连接相机，并通过蓝牙传输位置和拍照指令。</li>
+      <li><strong>通知、声音和震动：</strong>用于常驻同步状态、权限缺失提示及相机断连提醒，实际提示方式还受系统通知设置影响。</li>
+      <li><strong>前台服务、唤醒锁、电池优化豁免及启动恢复：</strong>用于在你启用同步后维持或恢复后台工作。你可以拒绝或撤销相关权限，但可能无法正常使用对应功能。</li>
+    </ul>
+    <p>为提高后台持续同步的稳定性，带后台增强功能的版本会循环播放应用内置的高频静默音频，系统中可能出现媒体控制条。它不使用麦克风、不录音，也不把声音发送给开发者。<strong>持续定位、蓝牙及后台运行可能明显增加耗电；不使用时请在应用内完全退出。</strong></p>
+    <p>蓝牙拍照控制的是相机快门，本应用不读取或上传相机照片，也不通过该功能调用手机相机。正式发布版无需 Root，不提供开发调试版的电量统计功能。</p>
+
+    <h2>4. 存储与对外传输</h2>
+    <p>当前正式发布版没有互联网访问权限，没有应用账号、广告 SDK 或第三方统计 SDK，不会自动把位置、注册资料或诊断记录上传到开发者服务器，也不出售这些信息。</p>
+    <p><strong>发送给相机：</strong>你启用同步后，位置通过蓝牙发送给所注册的相机。相机可能将位置写入照片的 EXIF 等元数据；之后分享照片时，位置可能随照片一起传播。删除应用中的信息不会删除相机或已拍照片中的信息，请在相机、照片管理工具或分享服务中另行处理。</p>
+    <p><strong>主动反馈：</strong>只有你发起反馈、选择接收应用并完成发送时，反馈正文及你选择附上的诊断文件才会通过该应用对外发送。邮件、分享应用及接收方按照各自政策处理数据。反馈可能包含你的邮箱、你填写的内容及附件；开发者仅为排查问题和回复反馈使用收到的信息。请不要发送与排查无关的个人信息。</p>
+    <p>Android 定位与蓝牙服务、手机厂商以及你使用的邮件或分享服务可能按其自身设置和政策处理信息，本政策不替代这些服务的隐私政策。</p>
+
+    <h2>5. 保留期限与安全</h2>
+    <p>注册资料、设置、固定坐标及最近同步信息保存在应用本地存储中，直到被替换、清除或删除。诊断按最近 6 小时的窗口滚动清理，并设置容量上限；清理在应用运行时执行，停止期间已有文件可能保留至下次运行。导出时生成的临时副本由应用后续清理或系统缓存清理移除。</p>
+    <p>应用使用 Android 应用隔离存储，已关闭 Android 应用备份，不提供开发者云端备份。请保护手机和相机的访问权限。已经发送给其他应用或接收方的副本，不会因清除 CamGeo 数据而自动删除。</p>
+    <p>开发者收到的反馈邮件和附件只在处理反馈及必要后续沟通所需期间保留；你可以通过上述邮箱申请删除，适用法律要求保留的情况除外。</p>
+
+    <h2>6. 你的选择与删除方式</h2>
+    <ul>
+      <li>在应用内选择完全退出，停止本应用的持续同步和后台增强运行。</li>
+      <li>在 Android 应用权限和通知设置中，随时撤销定位、附近设备或通知权限，或调整后台运行限制。</li>
+      <li>通过应用的解除绑定功能移除所选相机；手机系统和相机中保留的蓝牙注册信息可能还需分别删除。</li>
+      <li>通过 Android 设置中的“清除应用数据”或卸载应用，删除应用管理的本地设置、位置和诊断资料。再次使用时可能需要重新授权和注册相机。</li>
+      <li>如需删除已经发送给开发者的反馈，请联系 <a href="mailto:steinvenior@gmail.com">steinvenior@gmail.com</a>，并说明需要处理的反馈内容。</li>
+    </ul>
+    <p>应用没有账号系统，因此无需创建或注销应用账号。</p>
+
+    <h2>7. 本隐私页面</h2>
+    <p>本页面由 GitHub Pages 托管。我们没有在页面中嵌入广告、访问分析或第三方字体，也不设置追踪 Cookie。访问时，GitHub 可能为提供托管服务和保障安全而处理 IP 地址等访问记录，详见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。阅读本页面无需注册或登录。</p>
+
+    <h2>8. 更新与联系</h2>
+    <p>我们可能随功能或数据处理方式变化更新本政策，并修改页面顶部日期。新增需要授权的数据用途时，将通过应用或相应授权流程说明。隐私问题、访问或删除请求，请联系 <a href="mailto:steinvenior@gmail.com">steinvenior@gmail.com</a>。</p>
+  </article>
+
+  <article id="en" class="translation" lang="en" aria-label="English privacy policy">
+    <h2>Privacy Policy</h2>
+    <p class="meta">Effective and last updated: October 26, 2026 · Package: com.mnd.camgeo</p>
+    <div class="summary"><p><strong>At a glance:</strong> CamGeo sends your phone's location or fixed coordinates you enter to your registered Canon camera over Bluetooth. The app does not automatically upload locations to a developer server. Photos taken by the camera may contain that location.</p></div>
+
+    <h2>1. App and developer</h2>
+    <p>CamGeo (package com.mnd.camgeo) is provided by steinvenior to synchronize locations with compatible Canon cameras and provide Bluetooth shutter control, connection status and disconnection reminders. This policy applies to production releases.</p>
+    <p>For privacy questions or deletion requests, contact <a href="mailto:steinvenior@gmail.com">steinvenior@gmail.com</a>.</p>
+
+    <h2>2. Information and purposes</h2>
+    <ul>
+      <li><strong>Location:</strong> With permission, CamGeo obtains latitude and longitude through Android location services, together with available altitude, accuracy, source and capture time. You may instead enter fixed coordinates. Locations provide shooting places to your camera, display the latest sync result and help determine whether a position is still usable. Continuous syncing may obtain and send locations while the app is in the background or the phone is locked.</li>
+      <li><strong>Camera and Bluetooth information:</strong> Advertisements, Bluetooth identifiers, device names, registration identifiers, connection status and available power status are processed to discover your selected camera, register, reconnect, send locations and control its shutter. Registration may provide the phone name or an app-generated registration identifier to the camera.</li>
+      <li><strong>Settings and local state:</strong> Camera registration, preferences, fixed coordinates, latest locations and sync times, permission and setup state, and agreement choices are saved on your phone. There is no travel-history database remotely accessible to the developer.</li>
+      <li><strong>Diagnostics and feedback:</strong> Status, timing and errors about syncing, Bluetooth, location, notifications and background operation are logged locally. Feedback you initiate may include the app version, phone model, Android version and your description. Runtime diagnostics are designed to avoid precise coordinates and complete Bluetooth addresses, but may contain device and operating-environment information. Review files before sharing.</li>
+    </ul>
+
+    <h2>3. Permissions and background operation</h2>
+    <ul>
+      <li><strong>Location:</strong> Used to obtain phone locations and meet Bluetooth-scanning requirements on applicable Android versions. Background location ("Allow all the time") supports sharing while the app is in the background or the phone is locked. Foreground-only access may limit background syncing.</li>
+      <li><strong>Nearby devices / Bluetooth:</strong> Used to discover, register and connect to your camera and send locations and shutter commands.</li>
+      <li><strong>Notifications, sound and vibration:</strong> Used for ongoing sync status, missing-permission notices and disconnection reminders, subject to system notification settings.</li>
+      <li><strong>Foreground services, wake locks, battery-optimization exemptions and startup recovery:</strong> Used to maintain or restore background work after you enable syncing. You may deny or revoke access, which may prevent the corresponding features from working.</li>
+    </ul>
+    <p>Versions with background enhancement loop a bundled high-frequency silent audio track to improve continuous syncing. A media control panel may appear in Android. This does not use the microphone, record audio or send audio to the developer. <strong>Continuous location, Bluetooth and background operation can significantly increase battery use. Fully exit the app when it is not needed.</strong></p>
+    <p>Bluetooth shutter control operates the camera. The app does not read or upload camera photos or use the phone camera for this feature. Production releases do not require Root and exclude the energy-statistics feature available in developer debug builds.</p>
+
+    <h2>4. Storage and transfers</h2>
+    <p>The current production release has no Internet permission, app accounts, advertising SDKs or third-party analytics SDKs. It does not automatically upload locations, registration information or diagnostics to developer servers, and we do not sell this information.</p>
+    <p><strong>Your camera:</strong> When syncing is enabled, locations are transferred over Bluetooth to your registered camera. The camera may store locations in photo metadata such as EXIF, which may accompany photos you later share. Deleting app information does not delete information from the camera or existing photos; manage those copies using your camera, photo tools or sharing service.</p>
+    <p><strong>Feedback you choose to send:</strong> Feedback text and diagnostic attachments you select are sent externally through another app only when you initiate feedback, choose a receiving app and complete sending. Email services, sharing apps and recipients handle data under their own policies. Feedback may contain your email address, submitted text and attachments. The developer uses received information to investigate and reply to your feedback. Do not send unrelated personal information.</p>
+    <p>Android location and Bluetooth services, device manufacturers, and your email or sharing providers may process information under their own settings and policies. This policy does not replace their policies.</p>
+
+    <h2>5. Retention and security</h2>
+    <p>Registration, settings, fixed coordinates and the latest sync information remain in app-local storage until replaced, cleared or deleted. Diagnostics use a rolling six-hour window and a storage limit. Cleanup runs while the app operates; existing files may remain while it is stopped until it runs again. Temporary export copies are removed by subsequent app cleanup or system cache management.</p>
+    <p>CamGeo uses Android app-isolated storage, disables Android app backup and provides no developer-operated cloud backup. Protect access to your phone and camera. Copies already sent to other apps or recipients are not automatically deleted when you clear CamGeo's data.</p>
+    <p>Feedback emails and attachments received by the developer are retained only as needed to resolve feedback and necessary follow-up. You may request deletion using the address above, except where retention is required by applicable law.</p>
+
+    <h2>6. Your choices and deletion</h2>
+    <ul>
+      <li>Use the app's full-exit action to stop ongoing syncing and background enhancement.</li>
+      <li>Revoke location, nearby-device or notification access, or change background restrictions in Android settings at any time.</li>
+      <li>Unbind the selected camera in the app. Bluetooth registration retained by Android or the camera may need removal separately.</li>
+      <li>Use "Clear app data" in Android settings or uninstall CamGeo to delete app-managed local settings, locations and diagnostics. Permissions and camera registration may be needed again.</li>
+      <li>To delete feedback sent to the developer, email <a href="mailto:steinvenior@gmail.com">steinvenior@gmail.com</a> and identify the feedback concerned.</li>
+    </ul>
+    <p>CamGeo has no account system, so no app account needs to be created or closed.</p>
+
+    <h2>7. This privacy page</h2>
+    <p>This page is hosted on GitHub Pages. We embed no advertising, visitor analytics or third-party fonts and set no tracking cookies. GitHub may process access records such as IP addresses for hosting and security; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. No account or sign-in is required to read this page.</p>
+
+    <h2>8. Changes and contact</h2>
+    <p>We may update this policy when features or data practices change and revise the date above. New data uses requiring permission will be explained through the app or the relevant authorization flow. Contact <a href="mailto:steinvenior@gmail.com">steinvenior@gmail.com</a> with privacy questions or access and deletion requests.</p>
+    <p><a href="#zh" lang="zh-CN">返回中文版</a></p>
+  </article>
+  <footer>CamGeo · steinvenior · <a href="mailto:steinvenior@gmail.com">steinvenior@gmail.com</a></footer>
+</main>
+</body>
+</html>
