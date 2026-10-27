@@ -66,6 +66,7 @@
       <li><strong>通知与提醒（必需）：</strong>用于持续显示应用仍在运行，并通过相机断连提醒提示用户及时关闭，防止忘记退出造成持续耗电。自 1.0.81 起，需要允许应用通知，并保持同步状态及已启用的提醒通知渠道可用；未满足时不启动或暂停同步服务。声音、震动及横幅的实际表现仍受系统设置影响，通知权限不用于广告。</li>
       <li><strong>前台服务、唤醒锁、电池优化豁免及启动恢复：</strong>用于在你启用同步后维持或恢复后台工作。你可以拒绝或撤销相关权限；缺少必需条件时，CamGeo 不提供位置同步、相机通信和后台增强服务。你仍可查看设置与隐私说明，或完全退出。</li>
     </ul>
+    <p>自 1.0.82 起，已开启的同步因缺少必需设置暂停时，会保留轻量的权限恢复检查。设置恢复后，应用会自动尝试在后台继续同步，并更新通知，无需重新打开应用。系统调度或后台启动限制可能导致延迟；完全退出或停止同步会取消自动恢复。</p>
     <p>为提高后台持续同步的稳定性，带后台增强功能的版本会循环播放应用内置的高频静默音频，系统中可能出现媒体控制条。它不使用麦克风、不录音，也不把声音发送给开发者。<strong>持续定位、蓝牙及后台运行可能明显增加耗电；不使用时请在应用内完全退出。</strong></p>
     <p>蓝牙拍照控制的是相机快门，本应用不读取或上传相机照片，也不通过该功能调用手机相机。正式发布版无需 Root，不提供开发调试版的电量统计功能。</p>
 
@@ -121,6 +122,7 @@
       <li><strong>Notifications and reminders (required):</strong> Show that CamGeo is still running and remind users to stop it when no longer needed, helping prevent unintended battery drain. Starting with 1.0.81, app notifications and the sync-status and enabled reminder channels must remain available; otherwise synchronization does not start or is paused. Sound, vibration and banners remain subject to system settings. Notification access is not used for advertising.</li>
       <li><strong>Foreground services, wake locks, battery-optimization exemptions and startup recovery:</strong> Used to maintain or restore background work after you enable syncing. You may deny or revoke access. When required conditions are missing, CamGeo stops or does not start location sharing, camera communication and background enhancement. Settings, privacy information and full exit remain available.</li>
     </ul>
+    <p>Starting with 1.0.82, an active session paused by missing required access retains lightweight access-recovery checks. Once access is restored, CamGeo automatically attempts to resume in the background and update its notifications without reopening the app. System scheduling or background-start restrictions may delay recovery. Fully exiting or stopping synchronization cancels automatic recovery.</p>
     <p>Versions with background enhancement loop a bundled high-frequency silent audio track to improve continuous syncing. A media control panel may appear in Android. This does not use the microphone, record audio or send audio to the developer. <strong>Continuous location, Bluetooth and background operation can significantly increase battery use. Fully exit the app when it is not needed.</strong></p>
     <p>Bluetooth shutter control operates the camera. The app does not read or upload camera photos or use the phone camera for this feature. Production releases do not require Root and exclude the energy-statistics feature available in developer debug builds.</p>
 
