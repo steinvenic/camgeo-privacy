@@ -37,7 +37,7 @@
   <header>
     <p class="brand">CamGeo</p>
     <h1>隐私权政策 <span lang="en">/ Privacy Policy</span></h1>
-    <p class="meta">生效及更新日期：2026 年 10 月 26 日 · 应用包名：com.mnd.camgeo</p>
+    <p class="meta">生效及更新日期：2026 年 11 月 18 日 · 应用包名：com.mnd.camgeo</p>
     <nav aria-label="语言 / Language">
       <a href="#zh" lang="zh-CN">简体中文</a>
       <a href="#en" lang="en" hreflang="en">English</a>
@@ -68,14 +68,15 @@
     </ul>
     <p>自 1.0.82 起，已开启的同步因缺少必需设置暂停时，会保留轻量的权限恢复检查。设置恢复后，应用会自动尝试在后台继续同步，并更新通知，无需重新打开应用。系统调度或后台启动限制可能导致延迟；完全退出或停止同步会取消自动恢复。</p>
     <p>为提高后台持续同步的稳定性，带后台增强功能的版本会循环播放应用内置的高频静默音频，系统中可能出现媒体控制条。它不使用麦克风、不录音，也不把声音发送给开发者。<strong>持续定位、蓝牙及后台运行可能明显增加耗电；不使用时请在应用内完全退出。</strong></p>
-    <p>蓝牙拍照控制的是相机快门，本应用不读取或上传相机照片，也不通过该功能调用手机相机。正式发布版无需 Root，不提供开发调试版的电量统计功能。</p>
+    <p>蓝牙拍照控制的是相机快门，此功能不调用手机相机。你也可以通过相机 Wi-Fi 通道浏览预览图并下载照片、RAW 文件或视频到手机；文件保存在手机本地，不自动上传到开发者服务器。正式发布版无需 Root，不提供开发调试版的电量统计功能。</p>
 
     <h2>4. 存储与对外传输</h2>
-    <p>当前正式发布版没有互联网访问权限，没有应用账号、广告 SDK 或第三方统计 SDK，不会自动把位置、注册资料或诊断记录上传到开发者服务器，也不出售这些信息。</p>
+    <p>本应用使用网络权限连接相机 Wi-Fi 通道、访问 Google Play 购买服务及打开用户选择的帮助页面。没有开发者账号系统、广告 SDK 或第三方统计 SDK，不会自动把位置、相机照片、注册资料或诊断记录上传到开发者服务器，也不出售这些信息。</p>
     <p><strong>发送给相机：</strong>你启用同步后，位置通过蓝牙发送给所注册的相机。相机可能将位置写入照片的 EXIF 等元数据；之后分享照片时，位置可能随照片一起传播。删除应用中的信息不会删除相机或已拍照片中的信息，请在相机、照片管理工具或分享服务中另行处理。</p>
     <p><strong>主动反馈：</strong>只有你发起反馈、选择接收应用并完成发送时，反馈正文及你选择附上的诊断文件才会通过该应用对外发送。邮件、分享应用及接收方按照各自政策处理数据。反馈可能包含你的邮箱、你填写的内容及附件；开发者仅为排查问题和回复反馈使用收到的信息。请不要发送与排查无关的个人信息。</p>
     <p>Android 定位与蓝牙服务、手机厂商以及你使用的邮件或分享服务可能按其自身设置和政策处理信息，本政策不替代这些服务的隐私政策。</p>
 
+    <p><strong>Google Play 购买：</strong>提供免费试用、年订阅或永久买断时，由 Google Play 处理付款、试用资格和订阅续费。本应用处理商品标识、购买状态、购买令牌及签名，用于校验、确认和恢复权益；永久购买凭证保存在手机本地，清除应用数据会移除本地副本，可使用购买时的 Play 账号恢复。本应用不接收银行卡号或支付密码，也不将购买凭证上传到开发者服务器。Google 按其<a href="https://policies.google.com/privacy">隐私政策</a>处理付款和账号信息。取消订阅请在 Google Play 操作；卸载或清除应用数据不会取消订阅。</p>
     <h2>5. 保留期限与安全</h2>
     <p>注册资料、设置、固定坐标及最近同步信息保存在应用本地存储中，直到被替换、清除或删除。诊断按最近 6 小时的窗口滚动清理，并设置容量上限；清理在应用运行时执行，停止期间已有文件可能保留至下次运行。导出时生成的临时副本由应用后续清理或系统缓存清理移除。</p>
     <p>应用使用 Android 应用隔离存储，已关闭 Android 应用备份，不提供开发者云端备份。请保护手机和相机的访问权限。已经发送给其他应用或接收方的副本，不会因清除 CamGeo 数据而自动删除。</p>
@@ -100,7 +101,7 @@
 
   <article id="en" class="translation" lang="en" aria-label="English privacy policy">
     <h2>Privacy Policy</h2>
-    <p class="meta">Effective and last updated: October 26, 2026 · Package: com.mnd.camgeo</p>
+    <p class="meta">Effective and last updated: November 18, 2026 · Package: com.mnd.camgeo</p>
     <div class="summary"><p><strong>At a glance:</strong> CamGeo sends your phone's location or fixed coordinates you enter to your registered Canon camera over Bluetooth. The app does not automatically upload locations to a developer server. Photos taken by the camera may contain that location.</p></div>
 
     <h2>1. App and developer</h2>
@@ -124,14 +125,15 @@
     </ul>
     <p>Starting with 1.0.82, an active session paused by missing required access retains lightweight access-recovery checks. Once access is restored, CamGeo automatically attempts to resume in the background and update its notifications without reopening the app. System scheduling or background-start restrictions may delay recovery. Fully exiting or stopping synchronization cancels automatic recovery.</p>
     <p>Versions with background enhancement loop a bundled high-frequency silent audio track to improve continuous syncing. A media control panel may appear in Android. This does not use the microphone, record audio or send audio to the developer. <strong>Continuous location, Bluetooth and background operation can significantly increase battery use. Fully exit the app when it is not needed.</strong></p>
-    <p>Bluetooth shutter control operates the camera. The app does not read or upload camera photos or use the phone camera for this feature. Production releases do not require Root and exclude the energy-statistics feature available in developer debug builds.</p>
+    <p>Bluetooth shutter control operates the camera. This feature does not use the phone camera. You can also browse camera previews and download photos, RAW files or videos over the camera Wi-Fi channel. These files remain on your phone and are not automatically uploaded to developer servers. Production releases do not require Root and exclude the energy-statistics feature available in developer debug builds.</p>
 
     <h2>4. Storage and transfers</h2>
-    <p>The current production release has no Internet permission, app accounts, advertising SDKs or third-party analytics SDKs. It does not automatically upload locations, registration information or diagnostics to developer servers, and we do not sell this information.</p>
+    <p>The app uses network access for the camera Wi-Fi channel, Google Play purchases and help pages you choose to open. There is no developer account system, advertising SDK or third-party analytics SDK. Locations, camera files, registration information and diagnostics are not automatically uploaded to developer servers, and we do not sell this information.</p>
     <p><strong>Your camera:</strong> When syncing is enabled, locations are transferred over Bluetooth to your registered camera. The camera may store locations in photo metadata such as EXIF, which may accompany photos you later share. Deleting app information does not delete information from the camera or existing photos; manage those copies using your camera, photo tools or sharing service.</p>
     <p><strong>Feedback you choose to send:</strong> Feedback text and diagnostic attachments you select are sent externally through another app only when you initiate feedback, choose a receiving app and complete sending. Email services, sharing apps and recipients handle data under their own policies. Feedback may contain your email address, submitted text and attachments. The developer uses received information to investigate and reply to your feedback. Do not send unrelated personal information.</p>
     <p>Android location and Bluetooth services, device manufacturers, and your email or sharing providers may process information under their own settings and policies. This policy does not replace their policies.</p>
 
+    <p><strong>Google Play purchases:</strong> Where trials, annual subscriptions or permanent unlocks are offered, Google Play handles payment, trial eligibility and subscription renewal. CamGeo processes product identifiers, purchase status, purchase tokens and signatures to verify, acknowledge and restore access. Permanent purchase credentials are stored locally; clearing app data removes the local copy, and access can be restored using the purchasing Play account. The app does not receive card numbers or payment passwords, or upload purchase credentials to developer servers. Google processes payments and account information under its <a href="https://policies.google.com/privacy">Privacy Policy</a>. Manage cancellation in Google Play; uninstalling or clearing app data does not cancel a subscription.</p>
     <h2>5. Retention and security</h2>
     <p>Registration, settings, fixed coordinates and the latest sync information remain in app-local storage until replaced, cleared or deleted. Diagnostics use a rolling six-hour window and a storage limit. Cleanup runs while the app operates; existing files may remain while it is stopped until it runs again. Temporary export copies are removed by subsequent app cleanup or system cache management.</p>
     <p>CamGeo uses Android app-isolated storage, disables Android app backup and provides no developer-operated cloud backup. Protect access to your phone and camera. Copies already sent to other apps or recipients are not automatically deleted when you clear CamGeo's data.</p>
